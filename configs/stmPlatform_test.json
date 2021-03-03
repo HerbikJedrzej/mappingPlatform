@@ -1,0 +1,17 @@
+{
+  "spi_transmit_key": 0x96,
+  "spi_recived_key": 0x5a,
+  "spi_interface_mode" : "TuneRotatePID",
+  "stright_movement": {
+    "p": 0.1,
+    "i": -4.1,
+    "d": 124.1,
+    "anti_windup": 2.1
+  },
+  "rotate_movement": {
+    "p": 0.1,
+    "i": -45.1,
+    "d": 4.1,
+    "anti_windup": -4124.0
+  }
+}

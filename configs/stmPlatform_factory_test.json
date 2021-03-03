@@ -1,0 +1,28 @@
+{
+  "spi_transmit_key": 0x96,
+  "spi_recived_key": 0x5a,
+  "stright_movement": {
+    "p": 1.1,
+    "i": 2.1,
+    "d": 3.1,
+    "anti_windup": 4.1
+  },
+  "rotate_movement": {
+    "p": 1.2,
+    "i": 2.2,
+    "d": 3.2,
+    "anti_windup": 4.2
+  },
+  "max_measured_voltage" : 5.5,
+  "battery_adc_max_word" : 0xfff,
+  "battery_cells" : [
+    {
+      "upper_resistor_ohm" : 11111,
+      "lower_resistor_ohm" : 22222
+    },
+    {
+      "upper_resistor_ohm" : 33333,
+      "lower_resistor_ohm" : 44444
+    }
+  ]
+}

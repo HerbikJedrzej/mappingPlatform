@@ -1,0 +1,19 @@
+table I2C_device{
+  bus_name : string;
+  address  : short = 0;
+}
+
+table RaspberryConfiguration{
+  reset_pin         : uint8;
+  write_protect_pin : uint8;
+  select_i2c_pin    : uint8;
+  stm_ready_pin     : uint8;
+  yellow_led        : uint8;
+  blue_led          : uint8;
+  red_led           : uint8;
+  green_led         : uint8;
+  eeprom_i2c        : I2C_device;
+  spi_bus_name      : string;
+}
+
+root_type RaspberryConfiguration;

@@ -1,0 +1,15 @@
+{
+  "reset_pin"         : 0,
+  "write_protect_pin" : 17,
+  "select_i2c_pin"    : 4,
+  "stm_ready_pin"     : 22,
+  "yellow_led"        : 1,
+  "blue_led"          : 7,
+  "red_led"           : 12,
+  "green_led"         : 18,
+  "eeprom_i2c" : {
+    "bus_name" : "/dev/i2c-1",
+    "address"  : 0x50,
+  },
+  "spi_bus_name" : "/dev/spidev0.0"
+}

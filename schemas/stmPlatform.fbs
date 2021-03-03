@@ -1,0 +1,30 @@
+table PID{
+  p: double = 1.0;
+  i: double = 0.0;
+  d: double = 0.0;
+  anti_windup: double = 0.0;
+}
+
+table BatteryCell{
+  upper_resistor_ohm: uint32 = 0;
+  lower_resistor_ohm: uint32 = 0;
+}
+
+enum SpiInterfaceMode:uint8 {
+    NormalMode    = 0,
+    TuneRotatePID = 1,
+    TuneMovePID   = 2,
+}
+
+table Configuration{
+  spi_transmit_key   : uint8 = 0xa5;
+  spi_recived_key    : uint8 = 0x5a;
+  spi_interface_mode : SpiInterfaceMode = NormalMode;
+  stright_movement   : PID;
+  rotate_movement    : PID;
+  max_measured_voltage: double = 3.3;
+  battery_adc_max_word: uint32 = 0xff;
+  battery_cells: [BatteryCell];
+}
+
+root_type Configuration;
